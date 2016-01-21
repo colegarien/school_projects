@@ -17,8 +17,8 @@ to use the simulated registers, the input file uses the following op-codes
 111 - PRINT_R1  // contents of R1 is displayed
 ```
 
-# Compiling and Running
-
-`make -f p01make`
-
-`p01 i01.dat o01.dat`
+### Compiling and Running
+```
+make -f p01make
+p01 i01.dat o01.dat
+```
