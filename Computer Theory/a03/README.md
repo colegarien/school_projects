@@ -31,7 +31,7 @@ aaabbb						# - each line is seen as a tape for the PDA
 aab							# - the program will tell if Accept/Reject
 abb
 ab
-
+```
 
 ### Transition Definition Lines
 
