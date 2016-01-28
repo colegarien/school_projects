@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">"
+
+    <TextView
+        android:id="@+id/gameover_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/text_large"
+        android:text="Game Over" />
+    <Button 
+        android:id="@+id/btn_gameover_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Quit" />
+    <Space 
+        android:id="@+id/gameover_quit_menu_spacer" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/btn_gameover_quit"/>"
+    <Button 
+        android:id="@+id/btn_gameover_mainmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/gameover_quit_menu_spacer"
+        android:text="Main Menu" />
+    <Space 
+        android:id="@+id/gameover_stats_spacer" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/gameover_txt"/>
+    <Space 
+        android:id="@+id/btns_stats_spacer" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/btn_gameover_mainmenu"/>
+    <TextView
+        android:id="@+id/stats_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignTop="@id/gameover_stats_spacer"
+        android:layout_alignBottom="@id/btns_stats_spacer"
+        android:lines="6"
+        android:textSize="@dimen/text_small"
+        android:text="" />
+
+</RelativeLayout>

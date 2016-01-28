@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Program6</string>
+    <string name="btn_dept">Department List</string>
+    <string name="dlg_dept">Pick Department</string>
+	<string-array name="department_array">
+	    <item>Department of Biology</item>
+		<item>Department of Chemistry</item>
+		<item>Department of Computer Science</item>
+		<item>Department of Engineering and Physics</item>
+		<item>Funeral Service Department</item>
+		<item>Department of Mathematics and Statistics</item>
+		<item>Department of Nursing</item>
+    </string-array>
+</resources>

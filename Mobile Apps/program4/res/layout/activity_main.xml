@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg">
+    
+    <Space android:id="@+id/seekspacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp" 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+	<SeekBar 
+	    android:id="@+id/barLeftAngle"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_alignParentLeft="true"
+    	android:layout_alignRight="@id/seekspacer"
+        android:background="@color/item_bg" />
+	<SeekBar 
+	    android:id="@+id/barRightAngle"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_alignParentRight="true"
+    	android:layout_alignLeft="@id/seekspacer"
+    	android:rotation="180"
+        android:background="@color/item_bg" />
+
+	<Space android:id="@+id/buttonspacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+	
+	<Button 
+	    android:id="@+id/btnGenerate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:padding="@dimen/item_padding"
+    	android:layout_margin="@dimen/item_margin"
+        android:background="@color/button_bg"
+        android:layout_alignRight="@id/buttonspacer"
+	    android:text="@string/btn_gene_text"/>
+	
+	<Button 
+	    android:id="@+id/btnSettings"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:padding="@dimen/item_padding"
+    	android:layout_margin="@dimen/item_margin"
+        android:background="@color/button_bg"
+        android:layout_alignLeft="@id/buttonspacer"
+	    android:text="@string/btn_sett_text"/>
+
+	<Space
+	    android:id="@+id/topspacer"
+	    android:layout_width="0dp"
+	    android:layout_height="0dp"
+	    android:layout_alignBottom="@id/barLeftAngle" />
+	<Space
+	    android:id="@+id/bottomspacer"
+	    android:layout_width="0dp"
+	    android:layout_height="0dp"
+	    android:layout_alignTop="@id/btnGenerate" />
+	
+	<ZoomControls
+	    android:id="@+id/lineWidthControls"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/bottomspacer"
+	    android:layout_centerHorizontal="true"/>
+	
+	<Space
+	    android:id="@+id/zoomspacer"
+	    android:layout_width="0dp"
+	    android:layout_height="0dp"
+	    android:layout_alignTop="@id/lineWidthControls" />
+	
+	<ImageView
+	    android:id="@+id/surfTree"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@id/zoomspacer"
+	    android:layout_alignTop="@id/topspacer" />
+
+</RelativeLayout>

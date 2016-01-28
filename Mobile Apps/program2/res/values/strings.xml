@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Program2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_text">Login</string>
+    <string name="id_text">ID</string>
+    <string name="password_text">Password</string>
+    <string name="login_failed_text">Login Failed\nTry Again!</string>
+    <string name="welcome_message">Welcome\n1!</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+</resources>

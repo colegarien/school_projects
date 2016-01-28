@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg" >
+
+    <TextView
+        android:id="@+id/id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/id_text" />
+    
+    <EditText
+        android:id="@+id/id_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/id_label"
+        android:layout_alignBaseline="@id/id_label"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/input_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:inputType="text"
+		android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_label"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/password_text" />
+    
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/password_label"
+        android:layout_alignBaseline="@id/password_label"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/input_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:inputType="textPassword"
+		android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/error_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_below="@id/password_label"
+        android:visibility="invisible"
+        android:background="@color/item_bg"
+        android:textColor="@color/label_text"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:textSize="@dimen/text_medium"
+		android:gravity="center"/>"
+    
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+        android:text="@string/login_text"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:background="@color/button_bg" />
+
+</RelativeLayout>

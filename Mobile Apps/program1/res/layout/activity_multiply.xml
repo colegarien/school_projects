@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:background="@color/window_bg" >
+	
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:useDefaultMargins="true"
+        android:columnCount="2"
+        android:rowCount="3"
+		android:background="@color/item_bg">
+		    <TextView
+		        android:layout_gravity="fill_horizontal"
+		        android:text="@string/number_1"
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/label_text" 
+		        />
+		    <TextView
+		        android:id="@+id/number1_text"
+		        android:layout_gravity="fill_horizontal"
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/input_text"/>
+		    <TextView
+		        android:layout_gravity="fill_horizontal"
+		        android:text="@string/number_2" 
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/label_text"/>
+		    <TextView
+		        android:id="@+id/number2_text"
+		        android:layout_gravity="fill_horizontal"
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/input_text"/>
+		    <TextView
+		        android:layout_gravity="fill_horizontal"
+		        android:text="@string/the_result"
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/label_text" />
+		    <TextView
+		        android:id="@+id/result_text"
+		        android:layout_gravity="fill_horizontal"
+		        android:textSize="@dimen/text_medium"
+		        android:textColor="@color/input_text"/>
+    </GridLayout>
+    <Button
+		    android:id="@+id/compute_multiply_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/compute_multiply" 
+		    android:textSize="@dimen/text_medium"
+			android:background="@color/button_bg"
+		    android:textColor="@color/label_text"/>
+
+</LinearLayout>

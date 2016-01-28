@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uco.cgarien1.program3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="20" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".ManageStateActivity"
+            android:label="@string/title_activity_manage_state" >
+        </activity>
+        <activity
+            android:name=".TestInputActivity"
+            android:label="@string/title_activity_test_input" >
+        </activity>
+        <activity
+            android:name=".ManageStartsActivity"
+            android:label="@string/title_activity_manage_starts" >
+        </activity>
+        <activity
+            android:name=".ManageEndsActivity"
+            android:label="@string/title_activity_manage_ends" >
+        </activity>
+        <activity
+            android:name=".ManageTransActivity"
+            android:label="@string/title_activity_manage_trans" >
+        </activity>
+    </application>
+
+</manifest>

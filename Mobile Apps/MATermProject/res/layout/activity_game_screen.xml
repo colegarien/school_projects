@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+	android:id="@+id/frame" >
+	
+    <Space 
+        android:id="@+id/mid_buymenu_spacer" 
+        android:layout_width = "0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"/>"
+	<RelativeLayout
+	    android:id="@+id/buy_menu"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent" 
+	    android:background="#666666"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignLeft="@id/mid_buymenu_spacer" >
+
+	    <TextView
+			android:id="@+id/buy_menu_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:text="Buy Menu" />
+	    <ListView
+	        android:id="@+id/list_buy_tower"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@id/buy_menu_title"
+			android:layout_above="@+id/btn_buy_close"
+		/>
+	    <ListView
+	        android:id="@+id/list_buy_obstacle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@id/buy_menu_title"
+			android:layout_above="@id/btn_buy_close"
+		/>
+	    <ListView
+	        android:id="@+id/list_buy_upgrade"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:layout_below="@id/buy_menu_title"
+			android:layout_above="@id/btn_buy_close"
+		/>
+	    <Button
+	        android:id="@id/btn_buy_close"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="Close" />
+	    <Button
+	        android:id="@+id/btn_buy_sell"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text="Sell" />
+	</RelativeLayout>
+</RelativeLayout>

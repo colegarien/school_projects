@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg" >
+
+    <TextView
+        android:id="@+id/text_line_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/text_line_color" />
+    <Spinner
+        android:id="@+id/spinner_line_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_line_color"
+        android:layout_alignTop="@id/text_line_color"
+        android:layout_alignBottom="@id/text_line_color"
+        android:layout_marginRight="@dimen/item_margin"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:background="@color/item_bg" />
+    
+    <TextView
+        android:id="@+id/text_back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_line_color"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/text_back_color" />
+    <Spinner
+        android:id="@+id/spinner_back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_line_color"
+        android:layout_toRightOf="@id/text_back_color"
+        android:layout_alignTop="@id/text_back_color"
+        android:layout_alignBottom="@id/text_back_color"
+        android:layout_marginRight="@dimen/item_margin"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:background="@color/item_bg" />
+    
+    <TextView
+        android:id="@+id/text_init_len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_back_color"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/text_init_len"
+        android:labelFor="@+id/init_len_input" />
+    <EditText
+        android:id="@id/init_len_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_init_len"
+        android:layout_alignBaseline="@id/text_init_len"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/input_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:inputType="numberDecimal"
+		android:gravity="center"/>
+    
+    <TextView
+        android:id="@+id/text_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_init_len"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/text_divide" />
+    <RadioGroup 
+        android:id="@+id/grp_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_divide"
+        android:layout_below="@id/text_init_len"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:orientation="vertical">
+        <RadioButton 
+            android:id="@+id/rad_divide"
+	        android:textSize="@dimen/text_medium"
+	        android:textColor="@color/input_text"
+	        android:background="@color/item_bg"
+	    	android:layout_margin="@dimen/item_margin"
+	    	android:padding="@dimen/item_padding"
+            android:text="@string/rad_div_text" />
+        <RadioButton 
+            android:id="@+id/rad_subtract"
+	        android:textSize="@dimen/text_medium"
+	        android:textColor="@color/input_text"
+	        android:background="@color/item_bg"
+	    	android:layout_margin="@dimen/item_margin"
+            android:text="@string/rad_sub_text" />"
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/text_factor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grp_divide"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/text_factor"
+        android:labelFor="@+id/factor_input" />
+    <EditText
+        android:id="@id/factor_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_factor"
+        android:layout_alignBaseline="@id/text_factor"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/input_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:inputType="numberDecimal"
+		android:gravity="center"/>
+
+</RelativeLayout>

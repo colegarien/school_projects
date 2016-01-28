@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Program1</string>
+    <string name="number_1">Number 1:</string>
+    <string name="number_2">Number 2:</string>
+    <string name="the_result">Result:</string>
+    <string name="add_btn">Add</string>
+    <string name="multiply_btn">Multiply</string>
+    <string name="compute_add">Compute to Add</string>
+    <string name="compute_multiply">Compute to Multiply</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_compute">ComputeActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_multiply">MultiplyActivity</string>
+    <string name="nothing_returned">No result was returned!</string>
+    <string name="number_1_warning">Enter value for Number 1</string>
+    <string name="number_2_warning">Enter value for Number 2</string>
+
+</resources>

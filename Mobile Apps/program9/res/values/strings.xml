@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Program9</string>
+    <string name="label_nuc">NUC</string>
+    <string name="label_cs">CS</string>
+    <string name="label_library">Library</string>
+
+</resources>

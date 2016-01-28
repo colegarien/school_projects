@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string-array name="array_colors">
+        <item>black</item>
+        <item>red</item>
+        <item>lime</item>
+        <item>blue</item>
+        <item>yellow</item>
+        <item>aqua</item>
+        <item>fuchsia</item>
+        <item>white</item>
+    </string-array>
+	
+    <string name="app_name">Program4</string>
+    <string name="btn_gene_text">Generate</string>
+    <string name="btn_sett_text">Settings</string>
+    <string name="text_line_color">Line Color</string>
+    <string name="text_back_color">Back Color</string>
+    <string name="text_init_len">Initial Length</string>
+    <string name="text_divide">Reduction</string>
+    <string name="text_factor">Factor</string>
+    <string name="rad_div_text">Divide</string>
+    <string name="rad_sub_text">Subtract</string>
+    <string name="title_activity_second">SecondActivity</string>
+
+</resources>

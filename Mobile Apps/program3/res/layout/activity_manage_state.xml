@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_mng_starts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:background="@color/button_bg"
+        android:text="@string/btn_mng_start_text" />
+
+    <Button
+        android:id="@+id/btn_mng_ends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:background="@color/button_bg"
+        android:text="@string/btn_mng_end_text" />
+
+    <Button
+        android:id="@+id/btn_mng_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:background="@color/button_bg"
+        android:text="@string/btn_mng_trans_text" />
+
+</LinearLayout>

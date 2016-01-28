@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="call">Call</string>
+    <string name="web">Web</string>
+    <string name="app_name">Program5</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

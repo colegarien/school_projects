@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Tower Defense</string>
+    <string name="btn_play_text">Play</string>
+    <string name="btn_instructions_text">Instructions</string>
+    <string name="btn_quit_text">Quit</string>
+    <string name="text_close">Close</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="title_activity_game_screen">GameScreenActivity</string>
+    <string name="title_level_dialog">Level Select</string>
+    <string name="imgIcon_descript">level preview</string>
+    <string name="title_activity_game_over">GameOverActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

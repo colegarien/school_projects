@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/window_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:text="@string/select_start_state" />
+    <RadioGroup 
+        android:id="@+id/grp_start_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/label_text"
+        android:background="@color/item_bg"
+    	android:layout_margin="@dimen/item_margin"
+    	android:padding="@dimen/item_padding"
+        android:orientation="vertical" />
+
+</LinearLayout>
